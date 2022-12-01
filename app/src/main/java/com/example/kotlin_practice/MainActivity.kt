@@ -6,6 +6,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,11 +16,21 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val message = findViewById<TextView>(R.id.message)
-        val recycleview=findViewById<RecyclerView>(R.id.recycleview)
-        recycleview.layoutManager=LinearLayoutManager(this)
+        val recycleview = findViewById<RecyclerView>(R.id.recycleview)
+        recycleview.layoutManager = LinearLayoutManager(this)
         message.text = "Hello world"
 
+        val data = ArrayList<ItemsViewModel>()
+        val media = "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
 
-        Toast.makeText(this,"Hello Jinal", Toast.LENGTH_SHORT).show()
+
+        for (i in 1..20) {
+            data.add(ItemsViewModel(media, "Item-" + i))
+        }
+        val adapter = RecycleAdapter(data)
+        recycleview.adapter = adapter
+
+
+        Toast.makeText(this, "Hello Jinal", Toast.LENGTH_SHORT).show()
     }
 }

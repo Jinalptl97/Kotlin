@@ -1,4 +1,4 @@
 package com.example.kotlin_practice
 
-class ItemsViewModel {
+data class ItemsViewModel(val img: String, val text: String) {
 }

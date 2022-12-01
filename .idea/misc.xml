@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Kotlin_practice/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Kotlin_practice/app/src/main/res/drawable/ic_launcher_background.xml" value="0.23333333333333334" />
+        <entry key="..\:/Kotlin_practice/app/src/main/res/layout/activity_another.xml" value="0.1634963768115942" />
+        <entry key="..\:/Kotlin_practice/app/src/main/res/layout/activity_main.xml" value="0.125" />
+        <entry key="..\:/Kotlin_practice/app/src/main/res/layout/activity_second.xml" value="0.125" />
+        <entry key="..\:/Kotlin_practice/app/src/main/res/layout/card_view_design.xml" value="0.1634963768115942" />
+        <entry key="..\:/Kotlin_practice/app/src/main/res/layout/item_lv.xml" value="0.15534420289855072" />
       </map>
     </option>
   </component>

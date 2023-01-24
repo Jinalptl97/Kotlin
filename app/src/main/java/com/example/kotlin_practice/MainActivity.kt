@@ -29,8 +29,18 @@ class MainActivity : AppCompatActivity() {
         }
         val adapter = RecycleAdapter(data)
         recycleview.adapter = adapter
+        adapter.setonItemclickListener(object : RecycleAdapter.Myonitemclicklistener{
+            override fun onclick(position: Int) {
+                Toast.makeText(this@MainActivity,"You click on item no. $position",Toast.LENGTH_SHORT).show()
+
+            }
+
+        })
 
 
         Toast.makeText(this, "Hello Jinal", Toast.LENGTH_SHORT).show()
+
+
+
     }
 }

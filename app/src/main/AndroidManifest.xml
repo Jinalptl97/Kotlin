@@ -12,20 +12,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_practice">
         <activity
-            android:name=".SecondActivity"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:name=".APIActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WebviewActiviy"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
+        <activity
+            android:name=".Fragment_activity"
+            android:exported="true" />
+        <activity
+            android:name=".DateTimepickerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SecondActivity"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity android:name=".AnotherActivity" />
     </application>
 

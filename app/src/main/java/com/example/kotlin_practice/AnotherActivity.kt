@@ -1,5 +1,6 @@
 package com.example.kotlin_practice
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
@@ -13,9 +14,14 @@ class AnotherActivity : AppCompatActivity() {
         setContentView(R.layout.activity_another)
         val textView:TextView=findViewById(R.id.textView)
 
-        val bundle=intent.extras
-        val mystring=bundle?.getString("data")
-        textView.text=mystring
+//        val bundle=intent.extras
+//        val mystring=bundle?.getString("data")
+//        textView.text=mystring
+
+
+        val sp=getSharedPreferences("user_data", Context.MODE_PRIVATE)
+        val string_value=sp.getString("username","")
+        textView.text =string_value
     }
 
 }
